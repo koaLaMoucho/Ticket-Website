@@ -1,0 +1,66 @@
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+form input,
+form button,
+form a.login {
+    margin-bottom: 0.5rem;
+    padding: 0.6rem;
+    width: 16rem;
+    border-radius: 5px;
+    border: 0.01rem solid #ccc;
+}
+
+form button {
+    background-color: var(--accent-color);
+    cursor: pointer;
+    font-size: 1em;
+}
+form.login a {
+    background-color: var(--register-color);
+    width: 6rem;
+    padding: 5px;
+    font-size: 0.8em;
+    border-radius: 5px;
+}
+
+form button, 
+form.login a {
+    text-decoration: none;
+    text-align: center;
+    border: none;
+    color: white;
+
+
+    transition: all 0.1s ease-in-out;
+
+}
+
+form button:hover {
+    background-color: var(--hover-color);
+    
+    transition: all 0.1s ease-in-out;
+}
+
+.register a, .register a:visited, #session_messages{
+    font-size: 0.8em;
+    text-decoration: none;
+    color: inherit;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+
+}
+.register a:hover{
+    color:var(--hover-color);
+}
+
+#session_messages > p{
+    margin-top: 10px;
+    color: red;
+    
+    border-radius: 5px;
+}

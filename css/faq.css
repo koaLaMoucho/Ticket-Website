@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap');
+
+.faq-grid {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  grid-gap: 20px;
+  align-items: center;
+  /* margin: 20px 0; */
+  padding: 20px;
+  /* border-radius: 5px; */
+  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); */
+}
+
+.faq-icon img {
+  width: 50px;
+  height: 50px;
+  filter: invert(1);
+}
+
+#faq {
+  height: auto;
+  width: auto;
+  background-color: var(--background-color);
+  border: 1px solid var(--background-secondary-color);
+  box-sizing: border-box;
+}
+
+
+.faq-remove-icon:hover {
+  transform: rotate(45deg);
+}
+
+.faq-remove-icon {
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+  margin-left: auto;
+}
+
+.delete-icon img {
+  height: 20px;
+  width: auto;
+}
+
+#faq h3 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: bold;
+  color: var(--secundary-color);
+}
+
+#faq h4 {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--secundary-color);
+  opacity: 0.5;
+}
+
+
+
+.answer-faq-form-container {
+  width: 75%;
+  max-width: 45rem;
+}
+
+
+#faq:hover {
+  background-color: var(--background-secondary-color);
+  transition: all 0.1s ease-in-out;
+}
+
+.tickets.faqs-grid {
+  grid-column: span 2;
+}
+
+.faq-form-toggle,
+.create-faq-form-toggle {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.textbox-container-faq,
+.textbox-container-create-faq {
+  /* display: none; */
+  padding: 10px;
+}
+
+
+
+.hidden {
+  display: none !important;
+}
+
+.faq-form-container,
+.create-faq-form-container {
+  margin-bottom: 20px;
+}
+
+
+
+
+
+.button-container-faq,
+.create-button-container-faq {
+  display: flex;
+  justify-content: left;
+}
+
+
+
+
+.button-faq {
+  border: none;
+  border-radius: 5px;
+  background-color: var(--accent-color);
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  margin: 10px;
+  padding: 10px 20px;
+  transition: all 0.2s ease-in-out;
+}
+
+.create-faq {
+  background-color: var(--accent-color);
+  color: white;
+  width: fit-content;
+}
+
+
+.hide-faq {
+  background-color: var(--accent-color);
+  ;
+  color: white;
+}
+
+#faqSearch {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  width: 100%;
+  outline: none;
+  margin: 10px;
+}
+
+#faqSearch:focus {
+  border-color: var(--accent-color);
+  box-shadow: 0 0 5px var(--accent-color);
+}
+
+#faq-list {
+  display: none;
+}
+
+#faq-list option {
+  padding: 5px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+#faq-list option:hover {
+  background-color: #f2f2f2;
+}
